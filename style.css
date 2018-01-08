@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100');
-* {
-    /*outline: 1px dashed red;*/
-    margin: 0px;
-}
 
 /*MOBILE VIEW*/
 
@@ -18,7 +14,6 @@
     z-index: 1;
     box-shadow: 0px 2px 4px grey;
     }
-
 #menubar img {
     width: 60px;
 }
@@ -73,7 +68,7 @@ nav a {
     text-decoration: none;
 }
 
-/*Burger menu ends*/
+/*Burger menu ENDS*/
 
 /* hover */
 nav ul li a:link {
@@ -83,7 +78,7 @@ nav ul li a:visited {
     color: white;
 }
 nav ul li a:hover {
-    color: white;
+    color: #aaa;
 }
 nav ul li a:active {
     color: #aaa;
@@ -112,57 +107,87 @@ header {
 }
 
 main {
-    padding-top: 60px;
-    color: #b7b7b7;
-    margin: 20px;
-    min-height: 50vh;
+    color: #8e8e8e;
+    margin: 30px;
+    margin-top: 100px;
     }
+
+h1 {
+    color: white;
+    font-size: 36pt;
+    font-family: 'Roboto', 'Avant Garde', sans-serif;
+    }
+
+h2 {
+    font-family: 'Roboto', 'Avant Garde', sans-serif;
+    color: black;
+    font-size: 20pt;
+    margin: 0;
+}
+
+h3 {
+    font-size: 14pt;
+    font-family: 'Roboto', 'Avant Garde', sans-serif;
+    color: #8e8e8e;
+    margin-top: 4pt;
+    margin-bottom: 0;
+}
+
+h3 a {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+p{
+    font-size: 10pt;
+    font-family: 'Roboto', 'Avant Garde', sans-serif;
+    line-height: 16pt;
+    margin-top: 4pt;
+    margin-bottom: 10px;
+}
+
+main p{
+    margin-bottom: 26pt;
+}
+
+/*About me LAYOUT*/
 
 #selfie {
     border-radius: 100%;
     margin-top: 1.6em;
     margin-bottom: 1.6em;
 }
-
 #selfie2 {
     display: none;
     border-radius: 100%;
     margin-top: 1.6em;
     margin-bottom: 1.6em;
 }
-
-h3 a {
-    color: #aaa;
-    text-decoration: none;
-}
-
-/*PORTFOLIO LAYOUT*/
-
 img {
     width: 100%;
     }
 
+/*PORTFOLIO LAYOUT*/
+
 .portfolio {
     color: black;
     font-size: 20pt;
-    margin-bottom: 20px;
-}
-
-.theme {
     margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+.theme {
+    margin-bottom: 60px;
 }
 .container {
-    position: relative; /*Mikilvægt??*/
+    position: relative;
     box-shadow: 1px 4px 14px grey;
-    margin-bottom: 2em;
+    margin-bottom: 30px;
 }
-
 .container img {
     display: block;
     width: 100%;
     height: auto;
 }
-
 .overlay {
     position: absolute;
     top: 0;
@@ -175,108 +200,72 @@ img {
     transition: .5s ease;
     background-color: #263638;
 }
-
 .container:hover .overlay {
     opacity: 1;
 }
-
 .text {
+    position: relative;
+    top: 20%;
     color: white;
     font-size: 20px;
     width: 90%;
     margin: auto;
-    margin-top: 3em;
+}
+.text h3 a {
+    color: white;
+    text-decoration: none;
+}
+.text p a {
+    color: white;
+}
+h3 a:hover {
+    color: #aaa;
 }
 
 /*Portfolio layout ENDS*/
 
-h1 {
-    color: white;
-    font-size: 36pt;
-    font-family: 'Roboto', 'Avant Garde', sans-serif;
-    }
+/* HEADER ANIMATION */
 
-h2 {
-    font-family: 'Roboto', 'Avant Garde', sans-serif;
-    color: black;
-    font-size: 20pt;
-}
-
-h3 {
-    font-size: 14pt;
-    font-family: 'Roboto', 'Avant Garde', sans-serif;
-    color: #aaa;
-    margin-bottom: 4px;
-}
-
-p{
-    font-size: 11pt;
-    font-family: 'Roboto', 'Avant Garde', sans-serif;
-}
-
-main p{
-    margin-bottom: 30px;
-}
-
-/* Stroke on header */
 .onheader {
     position: absolute;
     top: 0vw;
     width: 100%;
     }
-
 #openingText {
     position: absolute;
     top: 0vw;
     width: 100%;
     opacity: 0;
 }
-
 .appear {
     animation: fadeIn 0.3s ease-in forwards;
 }
-
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
-
 .disappear {
     animation: fadeOut 3s linear forwards;
 }
-
 @keyframes fadeOut {
     to {
         opacity: 0;
     }
 }
-
 path {
     fill: none;
-    /*stroke: black;*/
-    /*stroke-width: 5px;*/
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
     animation: svg 3.4s ease-out forwards;
 }
-
 @keyframes svg {
     100% {
         stroke-dashoffset: 0;
     }
 }
 
-/*stroke ends*/
-
-.text h3 a {
-    color: white;
-    text-decoration: none;
-}
-
-h3 a:hover {
-    color: #aaa;
-}
+/*HEADER ends*/
 
 footer {
     font-family: 'Roboto', 'Avant Garde', sans-serif;
@@ -305,7 +294,6 @@ footer {
     padding: 14px;
     border-radius: 100%;
 }
-
 #topButton:hover {
     background-color: #8dab7f;
     transform: scale(1.1);
@@ -375,6 +363,7 @@ li {
 
     main {
         margin: 60px;
+        margin-top: 100px;
     }
 }
 /* menu and STROKE ENDS */
@@ -382,13 +371,20 @@ li {
 
 @media only screen and (min-width: 768px) /*and (max-device-width : 1024px)
 and (orientation : landscape)*/ {
-    /*PORTFOLIO LAYOUT*/
+
+/*PORTFOLIO LAYOUT*/
     .theme {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 36px;
+        margin-bottom: 60px;
     }
 
+    .container {
+        margin-bottom: 0;
+}
+
+/*About me layout*/
     #about {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -406,22 +402,22 @@ and (orientation : landscape)*/ {
 
 @media only screen and (min-width: 1224px){
     .theme {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 24px;
+        margin-bottom: 80px;
     }
 
     #about {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 30px;
+        grid-template-columns: 3fr 2fr;
+        grid-gap: 100px;
     }
 
     main {
         margin: 100px;
+        margin-top: 140px;
     }
 
-    h2 {
+    h2, .portfolio {
         font-size: 30pt;
     }
 
